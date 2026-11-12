@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0b7d5a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="আল-আমান"><link rel="apple-touch-icon" href="icon-192.png"><title>আল-আমান ইসলামি যুব সংঘ</title><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+:root{--bg:#f1f5f3;--card:#fff;--tx:#12211a;--mu:#62756b;--pr:#0b7d5a;--pr2:#e2f4ec;--bd:#dde7e1;--rd:#c0392b;--am:#b7791f;--g1:#0b7d5a;--g2:#13b38a;color-scheme:light;box-sizing:border-box;padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1511;--card:#16211b;--tx:#e8f1ec;--mu:#93a79c;--pr:#34c98f;--pr2:#1b3a2d;--bd:#26372e;--rd:#ef7b6e;--am:#e5b055;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 "Hind Siliguri",system-ui,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:16px}
+.hd{background:linear-gradient(120deg,var(--g1),var(--g2));color:#fff;padding:calc(12px + env(safe-area-inset-top,0px)) 16px 12px;display:flex;justify-content:space-between;align-items:center;gap:8px;position:sticky;top:0;z-index:5;box-shadow:0 2px 14px #0003}
+.hd button{background:#fff3;color:#fff;border:0;padding:7px 14px;border-radius:999px;font:inherit;cursor:pointer}
+.hero{background:radial-gradient(circle at 85% 0,#ffffff38,transparent 45%),linear-gradient(135deg,var(--g1),var(--g2));color:#fff;text-align:center;padding:56px 18px;border-radius:0 0 30px 30px}
+.hero h1{margin:0 0 10px;font-size:34px}.hero p{max-width:560px;margin:0 auto 22px;opacity:.93}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:16px;margin-bottom:14px;box-shadow:0 4px 18px #0000000d}
+h2{margin:0 0 10px;font-size:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:14px}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:14px;box-shadow:0 4px 18px #0000000d}
+.stat small{color:var(--mu);display:block}.stat b{font-size:22px;color:var(--pr)}.stat.w b{color:var(--am)}
+.wal{background:radial-gradient(circle at 90% 0,#fff4,transparent 50%),linear-gradient(135deg,#0b7d5a,#13b38a);color:#fff;border-radius:24px;padding:22px;margin-bottom:14px;box-shadow:0 12px 30px #0b7d5a55}
+.wal small{opacity:.85}.wal b{display:block;font-size:36px}
+nav{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px}
+nav button{background:var(--card);border:1px solid var(--bd);color:var(--tx);padding:8px 16px;border-radius:999px;font:inherit;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--bd);border-radius:11px;background:var(--bg);color:var(--tx);min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.row>input,.row>select{flex:1 1 140px}
+.btn{background:linear-gradient(120deg,var(--g1),var(--g2));color:#fff;border:0;padding:10px 18px;border-radius:11px;font:inherit;font-weight:600;cursor:pointer;display:inline-block}
+.btn.s{padding:5px 11px;font-size:14px}.btn.d{background:var(--rd)}.btn.g{background:var(--pr2);color:var(--pr)}.btn.w{background:#fff;color:var(--g1)}
+.tw{overflow-x:auto;margin-top:10px}table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:8px;border-bottom:1px solid var(--bd);font-size:15px;vertical-align:middle}th{color:var(--mu);font-weight:500}
+.mu{color:var(--mu)}.login{max-width:390px;margin:8vh auto 0}.login input{width:100%;margin-bottom:10px}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--tx);color:var(--bg);padding:9px 18px;border-radius:999px;display:none;z-index:30}
+.pill{background:var(--pr2);color:var(--pr);padding:2px 10px;border-radius:999px;font-size:13px}
+.av{border-radius:50%;object-fit:cover;background:#fff3;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;background:var(--g1);flex:none}
+.tx{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px solid var(--bd)}
+.ic{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700}
+.ic.in{background:var(--pr2);color:var(--pr)}.ic.out{background:#c0392b22;color:var(--rd)}b.in{color:var(--pr)}b.out{color:var(--rd)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.ch{border:1px solid var(--bd);border-radius:12px;padding:6px 10px;font-size:14px;text-align:center}
+.ch.ok{background:var(--pr2);border-color:var(--pr);color:var(--pr)}.ch.late{background:#c0392b18;border-color:var(--rd);color:var(--rd)}
+.cb{height:340px;overflow:auto;display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.b{max-width:78%;background:var(--pr2);padding:7px 12px;border-radius:15px 15px 15px 4px;align-self:flex-start}
+.b.me{background:var(--pr);color:#fff;align-self:flex-end;border-radius:15px 15px 4px 15px}.b small{display:block;opacity:.7;font-size:11px}
+.fr{width:100%;height:260px;border:0;border-radius:12px}
+.ad{position:fixed;inset:0;background:#000;z-index:20;display:flex;flex-direction:column}.adb{flex:1;display:flex;min-height:0}
+.adb img,.adb iframe{width:100%;height:100%;border:0;object-fit:contain;background:#fff}
+.adf{padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;color:#fff}.adf a{color:#9fe}
+
+.lh{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));background:#7b1fa2;color:#fff;border-radius:14px 14px 0 0;overflow:hidden;margin-top:14px}
+.lh>div{padding:8px 10px;border:1px solid #ffffff33}.lh small{display:block;opacity:.85;font-size:12px}.lh b{font-size:15px}
+.ls{background:var(--card);border:1px solid var(--bd);border-radius:14px;margin-bottom:6px;overflow:hidden;box-shadow:0 4px 18px #0000000d}.ls .tw{margin:0}.ls .sm{padding:10px 12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.lt th,.ft th{text-align:center;color:#fff;font-weight:600;border:1px solid #ffffff33}.lt th{background:#0f6a9a}.ft th{background:#7b1fa2}
+.lt td,.ft td{text-align:center;border:1px solid var(--bd)}.ft,.lt{min-width:540px}
+.lt tr.ok td{background:var(--pr2)}.lt tr.late td{background:#c0392b18;color:var(--rd)}.lt tr.next td{background:#b7791f26}
+.yr{text-align:center;font-weight:700;margin:16px 0 6px}.x{color:var(--rd)}.fh{border-top:4px solid #7b1fa2}
+.bars{display:flex;gap:10px;height:170px}.bc{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center}.bw{flex:1;display:flex;align-items:flex-end;justify-content:center;width:100%}
+.bv{width:100%;max-width:46px;background:linear-gradient(180deg,var(--g2),var(--g1));border-radius:8px 8px 0 0;min-height:3px}.bc b{font-size:11px}.bc small{color:var(--mu)}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}.qa button{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px 8px;font:inherit;color:var(--tx);cursor:pointer;box-shadow:0 4px 18px #0000000d}.qa button span{display:block;font-size:24px}
+.stat.hi{background:linear-gradient(135deg,var(--g1),var(--g2));color:#fff;border:0}.stat.hi small,.stat.hi b{color:#fff}
+label.lb{display:flex;flex-direction:column;font-size:13px;color:var(--mu);flex:1 1 150px}
+@media print{.hd,nav,.noprint,#toast{display:none!important}body{background:#fff;color:#000}.card,.ls{box-shadow:none}}
+
+.pop{position:fixed;inset:0;background:#000a;z-index:25;display:flex;align-items:center;justify-content:center;padding:20px}
+.pb{background:var(--card);border-radius:22px;padding:24px;max-width:380px;width:100%;text-align:center;box-shadow:0 20px 60px #0008;animation:pp .25s}.pb p{white-space:pre-wrap}
+@keyframes pp{from{transform:scale(.9);opacity:0}}
+.nt{border-left:4px solid var(--bd)}.nt.un{border-left-color:var(--pr);background:var(--pr2)}.nt p{margin:4px 0;white-space:pre-wrap}
+
+.bn{width:100%;border-radius:16px;margin-bottom:14px;display:block;max-height:220px;object-fit:cover}.hero .bn{max-width:720px;margin:0 auto 18px}
+.cv{height:150px;background:linear-gradient(120deg,var(--g1),var(--g2));background-size:cover;background-position:center;position:relative}
+.pf{margin-top:-48px;padding:0 16px 12px;display:flex;gap:14px;align-items:flex-end;flex-wrap:wrap;position:relative}.pf .av{border:4px solid var(--card)}
+.pst{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;border-top:1px solid var(--bd)}.pst div{padding:10px 4px}.pst b{display:block;color:var(--pr);font-size:17px}.pst small{color:var(--mu)}
+.bg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}.bk{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:12px;display:flex;gap:10px;align-items:center;cursor:pointer;box-shadow:0 4px 18px #0000000d}.bk:hover{border-color:var(--pr)}.bk.late{border-color:var(--rd)}.bk small{display:block}
+
+.ib{background:#fff3;border:0;color:#fff;font-size:20px;width:40px;height:40px;border-radius:50%;cursor:pointer;position:relative;padding:0}
+.dot{position:absolute;top:-2px;right:-2px;background:#e53935;color:#fff;font-size:11px;font-style:normal;min-width:18px;height:18px;border-radius:9px;display:flex;align-items:center;justify-content:center}
+.ov{position:fixed;inset:0;background:#0008;z-index:40;backdrop-filter:blur(3px)}
+.dr{width:285px;max-width:84%;height:100%;background:var(--card);padding:0 0 20px;overflow:auto;box-shadow:6px 0 30px #0005;animation:sl .22s}
+@keyframes sl{from{transform:translateX(-100%)}}
+.dh{background:linear-gradient(135deg,#064e3b,#0b7d5a);color:#fff;padding:calc(26px + env(safe-area-inset-top,0px)) 18px 18px;display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.dr>button{display:block;width:calc(100% - 20px);margin:3px 10px;text-align:left;background:none;border:0;color:var(--tx);font:inherit;padding:12px 14px;border-radius:12px;cursor:pointer}
+.dr>button.on{background:var(--pr2);color:var(--pr);font-weight:600}.dr>button.out{color:var(--rd)}
+.lgbg{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at 20% 10%,#13b38a55,transparent 40%),radial-gradient(circle at 90% 90%,#d4af3744,transparent 40%),linear-gradient(160deg,#03271d,#064e3b 55%,#0b7d5a)}
+.lgbg .login{margin:0;width:100%;background:#ffffffee;color:#12211a;border:1px solid #fff5;border-radius:26px;padding:28px 24px;box-shadow:0 24px 60px #0007}
+.lgbg .login input{background:#f1f5f3;color:#12211a;border-color:#cfe0d6;padding:13px 14px}.lgbg .mu{color:#62756b}
+.lgo{width:70px;height:70px;margin:0 auto 10px;border-radius:50%;background:linear-gradient(135deg,#d4af37,#f3dc8a);color:#064e3b;display:flex;align-items:center;justify-content:center;font-size:36px;box-shadow:0 8px 22px #d4af3766}
+.po p{margin:10px 0}.pa{display:flex;gap:10px;align-items:center;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:6px 0;margin-bottom:8px}
+.pa button{background:none;border:0;font:inherit;color:var(--mu);cursor:pointer;padding:6px 12px;border-radius:10px}.pa button.on{color:var(--pr);background:var(--pr2);font-weight:600}
+.cm{display:flex;gap:8px;margin:6px 0;background:var(--bg);padding:7px 10px;border-radius:14px}
+.pc{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--bd)}
+</style></head><body><div id="app"></div><div id="toast"></div><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script><script>const APPNAME="web";
+const CFG={apiKey:"AIzaSyDGI3p4fqMmTc1v6lbcVvMs9i00QNTH4gg",authDomain:"al-aman-islami.firebaseapp.com",projectId:"al-aman-islami",storageBucket:"al-aman-islami.firebasestorage.app",messagingSenderId:"449186755709",appId:"1:449186755709:web:c0e52e257edbac2035ad14"};
+const APP=firebase.initializeApp(CFG,APPNAME),auth=APP.auth(),db=APP.firestore();
+const DOM='@al-aman-islami.app',AEMAIL='admin'+DOM,PW=p=>p+'@samity';
+const MN=['জানুয়ারি','ফেব্রুয়ারি','মার্চ','এপ্রিল','মে','জুন','জুলাই','আগস্ট','সেপ্টেম্বর','অক্টোবর','নভেম্বর','ডিসেম্বর'];
+const S={org:'আল-আমান ইসলামি যুব সংঘ',about:'আমরা একটি সঞ্চয় ও সহযোগিতামূলক সংগঠন। সদস্যদের মাসিক জমা ও ঋণের হিসাব স্বচ্ছভাবে সংরক্ষণ করাই আমাদের লক্ষ্য।',contact:'',ad:'',hHtml:'',mHtml:'',links:'',banner:'',members:[],deposits:[],loans:[],chat:[],notices:[],ledger:[],outsiders:[],nAll:[],nMe:[],posts:[],comments:[],pub:[],dms:[],aiHtml:''};
+const $=i=>document.getElementById(i),v=i=>$(i).value.trim();
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const D=s=>String(s).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]),E=s=>s.replace(/[০-৯]/g,d=>'০১২৩৪৫৬৭৮৯'.indexOf(d));
+const tk=n=>'৳ '+Number(n).toLocaleString('bn-BD');
+const fm=m=>{const[y,o]=m.split('-');return MN[o-1]+' '+D(y)};
+const fd=s=>{const[y,m,d]=s.split('-');return D(+d)+' '+MN[m-1]+' '+D(y)};
+const today=()=>new Date().toISOString().slice(0,10);
+const normP=s=>E(s).replace(/[\s-]/g,'').replace(/^\+?88/,'');
+function toast(t){const e=$('toast');e.textContent=t;e.style.display='block';setTimeout(()=>e.style.display='none',2800)}
+const authErr=e=>({'auth/invalid-credential':'নাম্বার বা পাসওয়ার্ড ভুল','auth/wrong-password':'নাম্বার বা পাসওয়ার্ড ভুল','auth/user-not-found':'নাম্বার বা পাসওয়ার্ড ভুল','auth/network-request-failed':'ইন্টারনেট সংযোগ নেই','auth/too-many-requests':'অনেকবার ভুল হয়েছে, কিছুক্ষণ পরে চেষ্টা করুন'}[e&&e.code]||'সমস্যা: '+((e&&(e.code||e.message))||e));
+const err=e=>toast(e&&e.code==='permission-denied'?'অনুমতি নেই — Firestore Rules বসানো হয়েছে কিনা দেখুন':authErr(e));
+const col=n=>db.collection(n);
+let subs=[];
+function listen(name,q,cb){subs.push(q.onSnapshot(s=>{S[name]=s.docs.map(d=>({id:d.id,...d.data()}));cb(name)},e=>err(e)))}
+function unlisten(){subs.forEach(f=>f());subs=[];S.members=[];S.deposits=[];S.loans=[];S.chat=[];S.notices=[];S.ledger=[];S.outsiders=[];S.nAll=[];S.nMe=[];S.posts=[];S.comments=[];S.pub=[];S.dms=[]}
+function listenSettings(){col('settings').doc('main').onSnapshot(s=>{if(s.exists)Object.assign(S,s.data());render()},e=>console.error(e))}
+const onData=n=>{if(typeof pg!=='undefined'&&pg==='ad')return;const A=document.activeElement;if(A&&A.dataset&&A.dataset.k&&n!=='chat')return;n==='chat'?chatNow():render()};
+const memb=id=>S.members.find(m=>m.id==id)||S.outsiders.find(m=>m.id==id)||{name:'(মুছে ফেলা)',phone:''};
+const dep=id=>S.deposits.filter(d=>d.mid==id).reduce((a,d)=>a+tot(d),0);
+const paidS=l=>l.paid.reduce((a,p)=>a+p.amt,0),due=l=>lpay(l)-paidS(l);
+const dueOf=id=>S.loans.filter(l=>l.mid==id).reduce((a,l)=>a+due(l),0);
+function addM(m,i){let[y,o]=m.split('-').map(Number);const t=o-1+i;return(y+Math.floor(t/12))+'-'+String(((t%12)+12)%12+1).padStart(2,'0')}
+function sched(l){const P=lpay(l),I=linst(l),n=ln(l);return Array.from({length:n},(_,i)=>{const m=addM(l.start,i);return{m,no:i+1,a:i<n-1?I:P-I*(n-1),paid:l.paid.find(p=>p.m===m)}})}
+const av=(m,s=40)=>m.photo?`<img class="av" style="width:${s}px;height:${s}px" src="${m.photo}">`:`<span class="av" style="width:${s}px;height:${s}px;font-size:${s/2.2}px">${esc((m.name||'?')[0])}</span>`;
+const frame=h=>h?`<div class="card"><iframe class="fr" sandbox="allow-scripts" srcdoc="${esc(h)}"></iframe></div>`:'';
+const tot=d=>(d.amt||0)+(d.annual||0)+(d.fine||0);
+const lpay=l=>l.pay||l.amt,linst=l=>l.inst||Math.ceil(lpay(l)/(l.n||1)),ln=l=>Math.ceil(lpay(l)/linst(l));
+function memForm(mid){
+ const m=memb(mid),by={};
+ S.deposits.filter(d=>d.mid==mid).forEach(d=>{const b=by[d.month]=by[d.month]||{a:0,y:0,f:0};b.a+=d.amt||0;b.y+=d.annual||0;b.f+=d.fine||0});
+ const ys=[...Object.keys(by).map(k=>+k.slice(0,4)),+(m.joined||today()).slice(0,4),+today().slice(0,4)],y0=Math.min(...ys),y1=Math.max(...ys);
+ let run=0,no=0,out='';
+ for(let y=y0;y<=y1;y++){let rows='';
+  for(let o=1;o<=12;o++){const k=y+'-'+String(o).padStart(2,'0'),b=by[k];if(b){run+=b.a+b.y+b.f;if(b.a>0)no++}
+   rows+=`<tr><td>${MN[o-1]}</td><td>${b&&b.y?tk(b.y):''}</td><td>${b&&b.a?tk(b.a):''}</td><td>${b?(b.f?tk(b.f):'<span class="x">✕</span>'):''}</td><td>${b?tk(run):''}</td><td>${b&&b.a>0?D(String(no).padStart(2,'0')):''}</td></tr>`}
+  out+=`<div class="yr">${D(y)}ইং</div><div class="tw"><table class="ft"><tr><th>মাস</th><th>এককালীন বাৎসরিক</th><th>মাসিক জমা</th><th>জরিমানা</th><th>মোট জমা</th><th>জমা নং</th></tr>${rows}</table></div>`}
+ return`<div class="card fh"><div class="row" style="flex-wrap:nowrap">${av(m,72)}<div><div class="mu">${esc(S.org)}</div><b style="font-size:20px">${m.no?D(m.no)+'/ ':''}${esc(m.name)}</b><div class="mu">মোবাইল ${D(esc(m.phone))}${m.joined?' · যোগদান '+fd(m.joined):''}</div></div><div style="margin-left:auto;text-align:right"><small class="mu">মোট ব্যালেন্স</small><br><b style="font-size:22px;color:var(--pr)">${tk(run)}</b></div></div></div>${out}`}
+function loanSheet(l,adm){
+ const s=sched(l),P=lpay(l),I=linst(l),cur=today().slice(0,7),fi=s.findIndex(x=>!x.paid);let cum=0;
+ const rows=s.map((x,i)=>{const p=x.paid;if(p)cum+=p.amt;const cls=p?'ok':dueDate(l,x.m)<today()?'late':i===fi?'next':'';
+  const act=adm&&i===fi?`<div class="row" style="flex-wrap:nowrap;justify-content:center"><input id="pd${l.id}" type="date" value="${today()}" style="width:140px"><input id="pa${l.id}" type="number" value="${x.a}" style="width:90px"><button class="btn s" onclick="pay('${l.id}')">জমা</button></div>`:'';
+  return`<tr class="${cls}"><td>${fm(x.m)}</td><td>${tk(x.a)}</td><td>${p?tk(cum):''}</td><td>${p?fd(p.date):(act||'')+`<small class="${dueDate(l,x.m)<today()?'x':'mu'}" style="display:block">শেষ: ${fd(dueDate(l,x.m))}</small>`}</td><td>${p?tk(P-cum):''}</td><td>${D(String(x.no).padStart(2,'0'))}</td></tr>`}).join('');
+ const H=[['ঋণীর নাম',memb(l.mid).name],['ঋণের পরিমাণ',tk(l.amt)],['পরিশোধ করবে',tk(P)],['মোট কিস্তি',D(String(s.length).padStart(2,'0'))+' টি'],['ঋণের মাস/তারিখ',fd(l.date)],['জামিনদার',l.gn||'—'],['মোবাইল নাম্বার',l.gp?D(l.gp):'—'],['কিস্তির পরিমাণ',tk(I)],['শেষ তারিখ','প্রতি মাসের '+D(l.dd||10)+' তারিখ']];
+ return`<div class="lh">${H.map(h=>`<div><small>${h[0]}</small><b>${esc(h[1])}</b></div>`).join('')}</div><div class="ls"><div class="tw"><table class="lt"><tr><th>মাস</th><th>মাসিক কিস্তি</th><th>পরিশোধ হয়েছে</th><th>কিস্তির তারিখ</th><th>পরিশোধ বাকি</th><th>কিস্তি নং</th></tr>${rows}</table></div><div class="sm"><span>পরিশোধ: <b>${tk(cum)}</b> · বাকি: <b>${tk(P-cum)}</b> ${P-cum<=0?'<span class="pill">পরিশোধিত</span>':''}</span>${adm?del('l'+l.id,`delL('${l.id}')`):''}</div></div>`}
+const dim=(y,m)=>new Date(y,m,0).getDate();
+function dueDate(l,m){const[y,o]=m.split('-').map(Number);return m+'-'+String(Math.min(l.dd||10,dim(y,o))).padStart(2,'0')}
+const overd=l=>sched(l).filter(s=>!s.paid&&dueDate(l,s.m)<today()),isPaidOff=l=>due(l)<=0;
+const safeUrl=u=>{u=(u||'').trim();return u?(/^https?:\/\//i.test(u)?u:'https://'+u):''};
+const waNum=n=>{n=E(String(n||'')).replace(/\D/g,'');return n.startsWith('0')?'88'+n:n};
+function parseLinks(t){return(t||'').split('\n').map(x=>x.split('|').map(s=>s.trim())).filter(a=>a[0]&&a[1]).map(a=>({t:a[0],u:safeUrl(a[1])}))}
+const linksHTML=()=>{const L=parseLinks(S.links);return L.length?`<div class="card"><h2>🔗 সংগঠনের লিংক</h2><div class="row">${L.map(x=>`<a class="btn g" target="_blank" rel="noopener noreferrer" href="${esc(x.u)}">${esc(x.t)}</a>`).join('')}</div></div>`:''};
+const bannerHTML=()=>S.banner?`<img class="bn" src="${esc(S.banner)}" alt="">`:'';
+function bubbles(mid,side){return S.chat.filter(c=>c.mid==mid).sort((a,b)=>a.ts.localeCompare(b.ts)).map(c=>`<div class="b ${c.from===side?'me':''}">${esc(c.text)}<small>${D(c.ts.slice(5,10))} ${D(c.ts.slice(11,16))}</small></div>`).join('')||'<p class="mu">এখনো কোনো বার্তা নেই</p>'}
+function refreshChat(mid,side){const c=$('cb');if(c){c.innerHTML=bubbles(mid,side);c.scrollTop=1e9}}
+function send(mid,side){const t=v('ci');if(!t)return;$('ci').value='';col('chat').add({mid,from:side,text:t,ts:new Date().toISOString()}).catch(err)}
+const chatUI=(mid,side)=>`<div class="card"><div id="cb" class="cb"></div><div class="row"><input id="ci" placeholder="বার্তা লিখুন…" onkeydown="if(event.key==='Enter')send('${mid}','${side}')"><button class="btn" onclick="send('${mid}','${side}')">পাঠান</button></div></div>`;
+
+
+let menu=0,vid=null,dmw=null,pq='';
+const ago=t=>{const s=(Date.now()-new Date(t))/1000;return s<60?'এইমাত্র':s<3600?D(Math.floor(s/60))+' মিনিট আগে':s<86400?D(Math.floor(s/3600))+' ঘণ্টা আগে':fd(t.slice(0,10))};
+const pu=id=>S.pub.find(x=>x.id==id)||{name:id==='admin'?S.org:'সদস্য'},pav=(id,s=40)=>av(pu(id),s);
+const drawer=(m,T)=>`<div class="ov" onclick="menu=0;render()"><div class="dr" onclick="event.stopPropagation()"><div class="dh">${av(m,58)}<b style="font-size:18px">${esc(m.name)}</b><small style="opacity:.85">${esc(S.org)}</small></div>${T.filter(t=>t[0]!=='n').map(t=>`<button class="${tab===t[0]?'on':''}" onclick="tab='${t[0]}';menu=0;render()">${t[1]}</button>`).join('')}<button class="out" onclick="out()">🚪 লগআউট</button></div></div>`;
+function post(){const t=v('pt');if(!t)return;$('pt').value='';col('posts').add({mid:me.id,text:t,ts:new Date().toISOString(),likes:[]}).catch(err)}
+function like(id){const p=S.posts.find(x=>x.id===id),h=(p.likes||[]).includes(me.id),F=firebase.firestore.FieldValue;col('posts').doc(id).update({likes:h?F.arrayRemove(me.id):F.arrayUnion(me.id)}).catch(err)}
+function cmt(id){const t=v('c'+id);if(!t)return;$('c'+id).value='';col('comments').add({pid:id,mid:me.id,text:t,ts:new Date().toISOString()}).catch(err)}
+function delP(id){if(confirm('পোস্টটি মুছবেন?'))col('posts').doc(id).delete().catch(err)}
+function openP(id){vid=id;tab='v';render()}
+const postCard=p=>{const L=p.likes||[],cs=S.comments.filter(c=>c.pid===p.id).sort((a,b)=>a.ts.localeCompare(b.ts));
+return`<div class="card po"><div class="row" style="flex-wrap:nowrap"><span onclick="openP('${p.mid}')" style="cursor:pointer">${pav(p.mid,42)}</span><div style="flex:1"><b>${esc(pu(p.mid).name)}</b><br><small class="mu">${ago(p.ts)}</small></div>${p.mid===me.id?`<button class="btn s g" onclick="delP('${p.id}')">🗑</button>`:''}</div><p style="white-space:pre-wrap">${esc(p.text)}</p><div class="pa"><button class="${L.includes(me.id)?'on':''}" onclick="like('${p.id}')">👍 লাইক ${D(L.length)}</button><span class="mu">💬 ${D(cs.length)}</span></div>${cs.map(c=>`<div class="cm">${pav(c.mid,28)}<div><b>${esc(pu(c.mid).name)}</b> ${esc(c.text)}</div></div>`).join('')}<div class="row" style="flex-wrap:nowrap"><input data-k=1 id="c${p.id}" placeholder="মন্তব্য লিখুন…" style="flex:1" onkeydown="if(event.key==='Enter')cmt('${p.id}')"><button class="btn s" onclick="cmt('${p.id}')">➤</button></div></div>`};
+const feedTab=()=>`<div class="card"><div class="row" style="flex-wrap:nowrap;align-items:flex-start">${pav(me.id,42)}<textarea data-k=1 id="pt" rows="2" style="flex:1" placeholder="আপনার মনে কী আছে?"></textarea></div><div style="text-align:right;margin-top:8px"><button class="btn" onclick="post()">পোস্ট করুন</button></div></div>${S.posts.map(postCard).join('')||'<div class="card mu">এখনো কোনো পোস্ট নেই। প্রথম পোস্টটি আপনিই করুন!</div>'}`;
+const peopleTab=()=>{const L=S.pub.filter(x=>x.id!=='admin'&&x.id!==me.id&&(x.name||'').includes(pq)).sort((a,b)=>(a.no||999)-(b.no||999));
+return`<div class="card"><h2>👥 সদস্যবৃন্দ (${D(S.pub.filter(x=>x.id!=='admin').length)} জন)</h2><input data-k=1 id="pqi" value="${esc(pq)}" placeholder="নাম খুঁজুন…" style="width:100%" oninput="pq=this.value;clearTimeout(window._t);window._t=setTimeout(()=>{render();const e=$('pqi');e.focus();e.setSelectionRange(1e3,1e3)},350)">${L.map(x=>`<div class="pc"><span onclick="openP('${x.id}')" style="cursor:pointer">${av(x,46)}</span><div style="flex:1;cursor:pointer" onclick="openP('${x.id}')"><b>${esc(x.name)}</b><br><small class="mu">${esc((x.bio||'আল-আমান পরিবারের সদস্য').slice(0,50))}</small></div><button class="btn s g" onclick="dmw='${x.id}';tab='d';render()">✉️</button></div>`).join('')||'<p class="mu">কাউকে পাওয়া যায়নি</p>'}</div>`};
+const profV=()=>{if(vid===me.id)return prof(memb(me.id));const x=pu(vid),ps=S.posts.filter(p=>p.mid===vid);
+return`<div class="card" style="padding:0;overflow:hidden"><div class="cv" style="${x.cover?`background-image:url(${esc(x.cover)})`:''}"></div><div class="pf">${av(x,96)}<div style="flex:1"><h2 style="margin:0;font-size:22px">${esc(x.name)}</h2><div class="mu">${x.no?'সদস্য নং '+D(x.no):'সংগঠন'}</div></div><button class="btn" onclick="dmw='${vid}';tab='d';render()">✉️ মেসেজ</button></div>${x.bio?`<p style="padding:0 16px 14px;margin:0;white-space:pre-wrap">${esc(x.bio)}</p>`:''}</div>${ps.map(postCard).join('')||'<div class="card mu">কোনো পোস্ট নেই</div>'}`};
+function dmSend(){const t=v('di');if(!t||!dmw)return;$('di').value='';col('dms').add({ps:[me.id,dmw],from:me.id,text:t,ts:new Date().toISOString()}).catch(err)}
+const dmTab=()=>{if(!dmw){const o={};S.dms.forEach(d=>{const k=d.ps.find(i=>i!==me.id);if(!o[k]||o[k].ts<d.ts)o[k]=d});const L=Object.entries(o).sort((a,b)=>b[1].ts.localeCompare(a[1].ts));
+return`<div class="card"><h2>✉️ মেসেজ</h2>${L.map(([k,d])=>`<div class="pc" style="cursor:pointer" onclick="dmw='${k}';render()">${pav(k,46)}<div style="flex:1"><b>${esc(pu(k).name)}</b><br><small class="mu">${d.from===me.id?'আপনি: ':''}${esc(d.text.slice(0,40))}</small></div><small class="mu">${ago(d.ts)}</small></div>`).join('')||'<p class="mu">কোনো মেসেজ নেই। "সদস্যবৃন্দ" থেকে কারও প্রোফাইলে গিয়ে মেসেজ করুন।</p>'}</div>`}
+const L=S.dms.filter(d=>d.ps.includes(dmw)).sort((a,b)=>a.ts.localeCompare(b.ts));setTimeout(()=>{const c=$('dc');if(c)c.scrollTop=1e9},30);
+return`<div class="card"><div class="row" style="flex-wrap:nowrap"><button class="btn s g" onclick="dmw=null;render()">←</button><span onclick="openP('${dmw}')" style="cursor:pointer">${pav(dmw,38)}</span><b>${esc(pu(dmw).name)}</b></div></div><div class="card"><div id="dc" class="cb">${L.map(d=>`<div class="b ${d.from===me.id?'me':''}">${esc(d.text)}<small>${ago(d.ts)}</small></div>`).join('')||'<p class="mu">কথা শুরু করুন…</p>'}</div><div class="row"><input data-k=1 id="di" placeholder="বার্তা লিখুন…" style="flex:1" onkeydown="if(event.key==='Enter')dmSend()"><button class="btn" onclick="dmSend()">পাঠান</button></div></div>`};
+const aiTab=()=>S.aiHtml?`<div class="card"><iframe class="fr" style="height:75vh" sandbox="allow-scripts allow-forms allow-popups" srcdoc="${esc(S.aiHtml)}"></iframe></div>`:'<div class="card mu">AI সহায়ক এখনো চালু করা হয়নি।</div>';
+let me=null,pg='home',tab='w';
+const app=h=>$('app').innerHTML=h;
+function chatNow(){if(me&&tab==='c')refreshChat(me.id,'m')}
+function render(){
+ if(pg==='ad')return adShow();
+ if(!me&&pg==='home')return app(`<div class="hd"><b>☪ ${esc(S.org)}</b><button onclick="pg='login';render()">লগইন</button></div>
+ <div class="hero">${bannerHTML()}<h1>${esc(S.org)}</h1><p>${esc(S.about)}</p><button class="btn w" onclick="pg='login';render()">নিজের একাউন্টে প্রবেশ করুন</button></div>
+ <div class="wrap" style="margin-top:14px"><div class="grid"><div class="stat"><small>💰 মাসিক জমা</small>প্রতি মাসের পূর্ণ হিসাব</div><div class="stat"><small>🏦 ঋণ ও কিস্তি</small>কোন মাসে কত কিস্তি</div><div class="stat"><small>💬 চ্যাট</small>অ্যাডমিনের সাথে সরাসরি কথা</div><div class="stat"><small>👥 সদস্য</small><b>${D(S.members.length)} জন</b></div></div>
+ ${linksHTML()}${frame(S.hHtml)}<div class="card"><h2>যোগাযোগ</h2><span class="mu">${esc(S.contact)}</span></div><p class="mu" style="text-align:center;font-size:14px">© ${esc(S.org)}</p></div>`);
+ if(!me)return app(`<div class="lgbg"><div class="card login"><div class="lgo">☪</div><h2 style="text-align:center;font-size:22px">☪ ${esc(S.org)}</h2><p class="mu" style="text-align:center;margin-top:0">লগইন</p>
+ <input id="lp" placeholder="মোবাইল নাম্বার" inputmode="tel"><input id="lw" type="password" placeholder="পাসওয়ার্ড" onkeydown="if(event.key==='Enter')login()">
+ <button class="btn" style="width:100%" onclick="login()">প্রবেশ করুন</button>
+ <p style="text-align:center;margin-bottom:0"><a href="#" style="color:var(--pr)" onclick="pg='home';render();return false">← হোম পেজ</a></p></div></div>`);
+ if(!S.members.length)return app('<p class="mu" style="text-align:center;margin-top:30vh">লোড হচ্ছে…</p>');
+ const m=memb(me.id),ls=S.loans.filter(l=>l.mid==m.id);
+ const T0=[['w','ওয়ালেট'],['f','সদস্য জমা'],['l','ঋণ/কিস্তি'],['n','🔔 নোটিফিকেশন'+(unread()?' ('+D(unread())+')':'')],['s','🏠 ফিড'],['u','👥 সদস্যবৃন্দ'],['d','✉️ মেসেজ'],['c','অ্যাডমিন চ্যাট'],['a','🤖 AI সহায়ক'],['p','প্রোফাইল']];const T=me.ext?T0.filter(t=>'lncp'.includes(t[0])):T0;
+ const b={w:()=>wallet(m,ls),f:()=>memForm(m.id),l:()=>loans(ls),n:()=>notifTab(),c:()=>chatUI(m.id,'m'),p:()=>prof(m),s:feedTab,u:peopleTab,d:dmTab,v:profV,a:aiTab}[tab]();
+ app(`<div class="hd"><span class="row" style="flex-wrap:nowrap"><button class="ib" onclick="menu=1;render()">☰</button><b>${esc(S.org)}</b></span><button class="ib" onclick="tab='n';render()">🔔${unread()?'<i class="dot">'+D(unread())+'</i>':''}</button></div><div class="wrap">${tab==='w'?bannerHTML():''}${b}</div>${menu?drawer(m,T):''}${popup()}`);
+ chatNow()}
+function wallet(m,ls){
+ const tx=[...S.deposits.filter(d=>d.mid==m.id).map(d=>({d:d.date,t:'জমা · '+fm(d.month)+(d.annual?' (বাৎসরিক সহ)':'')+(d.fine?' (জরিমানা সহ)':''),a:tot(d),p:1})),...ls.flatMap(l=>l.paid.map(p=>({d:p.date,t:'কিস্তি · '+fm(p.m),a:p.amt,p:0})))].sort((a,b)=>b.d.localeCompare(a.d));
+ const un=ls.flatMap(l=>sched(l).filter(s=>!s.paid)).sort((a,b)=>a.m.localeCompare(b.m)),nx=un[0],nm=addM(today().slice(0,7),1),nmAmt=un.filter(s=>s.m===nm).reduce((a,s)=>a+s.a,0);
+ return`<div class="wal"><small>আপনার মোট ব্যালেন্স (জমা)</small><b>${tk(dep(m.id))}</b><div class="row" style="justify-content:space-between;margin-top:12px"><span>বকেয়া ঋণ: ${tk(dueOf(m.id))}</span>${nx?`<span>পরবর্তী কিস্তি: ${fm(nx.m)} · ${tk(nx.a)}</span>`:''}</div></div>
+ ${nx?`<div class="card" style="border-left:5px solid var(--am)"><b>📅 আগামী কিস্তি</b><div>${fm(nx.m)} — <b>${tk(nx.a)}</b> (কিস্তি নং ${D(String(nx.no).padStart(2,'0'))})</div>${nmAmt&&nm!==nx.m?`<div class="mu">আগামী মাসে (${fm(nm)}) দিতে হবে: ${tk(nmAmt)}</div>`:''}</div>`:''}
+ ${linksHTML()}<div class="card"><h2>লেনদেনের তালিকা</h2>${tx.map(x=>`<div class="tx"><span class="ic ${x.p?'in':'out'}">${x.p?'↓':'↑'}</span><div style="flex:1"><b>${x.t}</b><br><small class="mu">${fd(x.d)}</small></div><b class="${x.p?'in':'out'}">${x.p?'+':'−'} ${tk(x.a)}</b></div>`).join('')||'<p class="mu">কোনো লেনদেন নেই</p>'}</div>${frame(S.mHtml)}`}
+function deps(m){const ds=S.deposits.filter(d=>d.mid==m.id).sort((a,b)=>b.month.localeCompare(a.month));
+ return`<div class="card"><h2>মাসিক জমার হিসাব</h2><div class="tw"><table><tr><th>মাস</th><th>কোন দিন</th><th>টাকা</th></tr>${ds.map(d=>`<tr><td>${fm(d.month)}</td><td>${fd(d.date)}</td><td>${tk(d.amt)}</td></tr>`).join('')||'<tr><td colspan=3 class="mu">কোনো জমা নেই</td></tr>'}<tr><th colspan=2>মোট</th><th>${tk(dep(m.id))}</th></tr></table></div></div>`}
+function extSum(ls){const un=ls.flatMap(l=>sched(l).filter(s=>!s.paid)).sort((a,b)=>a.m.localeCompare(b.m)),nx=un[0],d=ls.reduce((a,l)=>a+due(l),0),p=ls.reduce((a,l)=>a+paidS(l),0);
+ return`<div class="wal"><small>আপনার বকেয়া ঋণ</small><b>${tk(d)}</b><div class="row" style="justify-content:space-between;margin-top:12px"><span>মোট পরিশোধ: ${tk(p)}</span>${nx?`<span>পরবর্তী কিস্তি: ${fm(nx.m)} · ${tk(nx.a)}</span>`:''}</div></div>`}
+function loans(ls){const ac=ls.filter(l=>!isPaidOff(l)),pd=ls.filter(isPaidOff);
+ return(me.ext?extSum(ls)+linksHTML():'')+(ac.map(l=>loanSheet(l,false)).join('')||`<div class="card mu">${pd.length?'চলমান কোনো ঋণ নেই 🎉':'আপনার কোনো ঋণ নেই'}</div>`)+(pd.length?`<div class="card"><h2>✅ পরিশোধিত ঋণ (${D(pd.length)})</h2><small class="mu">এই ঋণগুলো সম্পূর্ণ পরিশোধ হয়েছে</small></div>`+pd.map(l=>loanSheet(l,false)).join(''):'')}
+function prof(m){
+ const ls=S.loans.filter(l=>l.mid==m.id),d=ls.reduce((a,l)=>a+due(l),0),bg=m.cover||S.banner,cv=bg?`background-image:url(${esc(bg)})`:'';
+ const ch=[m.phone?`<a class="btn g s" href="tel:${esc(m.phone)}">📞 ${D(esc(m.phone))}</a>`:'',m.wa?`<a class="btn g s" target="_blank" rel="noopener noreferrer" href="https://wa.me/${esc(waNum(m.wa))}">💬 WhatsApp</a>`:'',m.fb?`<a class="btn g s" target="_blank" rel="noopener noreferrer" href="${esc(safeUrl(m.fb))}">📘 Facebook</a>`:''].join(' ');
+ const st=me.ext?[[tk(d),'বকেয়া ঋণ'],[D(ls.length)+' টি','মোট ঋণ'],[D(ls.filter(isPaidOff).length)+' টি','পরিশোধিত']]:[[tk(dep(m.id)),'মোট জমা'],[tk(d),'বকেয়া ঋণ'],[m.no?D(m.no):'—','সদস্য নং']];
+ return`<div class="card" style="padding:0;overflow:hidden"><div class="cv" style="${cv}">${pedit?`<label class="btn s" style="position:absolute;right:10px;bottom:10px">কভার বদলান<input type="file" accept="image/*" hidden onchange="pic(this,'cover')"></label>`:''}</div>
+ <div class="pf">${av(m,96)}<div style="flex:1;min-width:150px"><h2 style="margin:0;font-size:22px">${m.no?D(m.no)+'/ ':''}${esc(m.name)}</h2><div class="mu">${me.ext?'ঋণগ্রহীতা':'সদস্য'} · ${fd(m.joined||m.date||today())} থেকে</div></div><button class="btn g s" onclick="pedit=!pedit;render()">${pedit?'বন্ধ করুন':'✏️ সম্পাদনা'}</button></div>
+ <div style="padding:0 16px 14px">${m.bio?`<p style="margin:0 0 10px;white-space:pre-wrap">${esc(m.bio)}</p>`:''}${m.addr?`<div class="mu" style="margin-bottom:8px">📍 ${esc(m.addr)}</div>`:''}<div class="row">${ch}</div></div>
+ <div class="pst">${st.map(x=>`<div><b>${x[0]}</b><small>${x[1]}</small></div>`).join('')}</div></div>
+ ${pedit?`<div class="card"><h2>প্রোফাইল সম্পাদনা</h2><div style="margin-bottom:8px"><label class="btn g s">ছবি বদলান<input type="file" accept="image/*" hidden onchange="pic(this,'photo')"></label></div><textarea id="pb" rows="2" style="width:100%;margin-bottom:8px" placeholder="নিজের সম্পর্কে লিখুন">${esc(m.bio||'')}</textarea><input id="pfb" value="${esc(m.fb||'')}" placeholder="Facebook প্রোফাইলের লিংক" style="width:100%;margin-bottom:8px"><input id="pwa" value="${esc(m.wa||'')}" placeholder="WhatsApp নাম্বার" inputmode="tel" style="width:100%;margin-bottom:8px"><input id="pad" value="${esc(m.addr||'')}" placeholder="ঠিকানা" style="width:100%;margin-bottom:8px"><button class="btn" onclick="saveP()">সংরক্ষণ করুন</button></div>`:''}
+ ${linksHTML()}
+ <div class="card"><h2>পাসওয়ার্ড বদলান</h2><div class="row"><input id="np" type="password" placeholder="নতুন পাসওয়ার্ড"><button class="btn" onclick="cpw()">বদলান</button></div></div>
+ <button class="btn d" style="width:100%" onclick="out()">লগআউট</button>`}
+function pic(i,f){const fl=i.files[0];if(!fl)return;const cv=f==='cover',W=cv?800:160,H=cv?240:160,r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const c=document.createElement('canvas');c.width=W;c.height=H;const k=Math.max(W/im.width,H/im.height),sw=W/k,sh=H/k;c.getContext('2d').drawImage(im,(im.width-sw)/2,(im.height-sh)/2,sw,sh,0,0,W,H);col(me.ext?'outsiders':'members').doc(me.id).update({[f]:c.toDataURL('image/jpeg',.8)}).catch(err)};im.src=r.result};r.readAsDataURL(fl)}
+let pedit=false;
+function saveP(){col(me.ext?'outsiders':'members').doc(me.id).update({bio:v('pb'),fb:v('pfb'),wa:E(v('pwa')),addr:v('pad')}).then(()=>{pedit=false;toast('প্রোফাইল সংরক্ষিত হয়েছে');render()}).catch(err)}
+function cpw(){const w=E(v('np'));if(w.length<4)return toast('কমপক্ষে ৪ অক্ষর দিন');auth.currentUser.updatePassword(PW(w)).then(()=>toast('পাসওয়ার্ড বদলেছে')).catch(e=>toast(e.code==='auth/requires-recent-login'?'লগআউট করে আবার ঢুকে চেষ্টা করুন':authErr(e)))}
+async function login(){const p=normP(v('lp')),w=E(v('lw'));if(!p||!w)return toast('নাম্বার ও পাসওয়ার্ড দিন');
+ try{const d=await col('phones').doc(p).get();if(!d.exists)return toast('নাম্বার বা পাসওয়ার্ড ভুল');await auth.signInWithEmailAndPassword(d.data().e,PW(w))}catch(e){toast(authErr(e))}}
+function out(){pg='home';auth.signOut()}
+async function start(m,uid,ext){me={id:m,uid,ext};tab=ext?'l':'s';
+ try{const s=await col('settings').doc('main').get();if(s.exists)Object.assign(S,s.data())}catch(e){}
+ subs.push(col(ext?'outsiders':'members').doc(m).onSnapshot(s=>{if(!ext&&s.exists){const d=s.data();col('pub').doc(m).set({name:d.name,no:d.no||0,photo:d.photo||'',bio:d.bio||'',cover:d.cover||''},{merge:true}).catch(()=>{})}S.members=s.exists?[{id:s.id,...s.data()}]:[];onData('members')},e=>err(e)));
+ listen('deposits',col('deposits').where('mid','==',m),onData);listen('loans',col('loans').where('mid','==',m),onData);listen('chat',col('chat').where('mid','==',m),onData);if(!ext){listen('posts',col('posts').orderBy('ts','desc').limit(80),onData);listen('comments',col('comments'),onData);listen('pub',col('pub'),onData);listen('dms',col('dms').where('ps','array-contains',m),onData)}nKnown=new Set();nStart=Date.now();listen('nAll',col('notices').where('mid','==',ext?'allx':'all'),()=>{onNotice();onData('n')});listen('nMe',col('notices').where('mid','==',m),()=>{onNotice();onData('n')});
+ let need=false;if(S.ad){try{need=localStorage.getItem('ad_'+m)!==today()}catch(e){need=true}}pg=need?'ad':'app';render()}
+auth.onAuthStateChanged(async u=>{
+ if(!u){unlisten();me=null;if(pg!=='login')pg='home';render();return}
+ if(u.email===AEMAIL){await auth.signOut();return}
+ if(me&&me.uid===u.uid)return;
+ try{const d=await col('users').doc(u.uid).get();if(!d.exists){await auth.signOut();toast('একাউন্ট পাওয়া যায়নি');return}await start(d.data().mid,u.uid,!!d.data().ext)}catch(e){err(e);auth.signOut()}});
+function adShow(){try{localStorage.setItem('ad_'+me.id,today())}catch(e){}
+ const img=/\.(png|jpe?g|gif|webp)(\?|$)/i.test(S.ad);
+ app(`<div class="ad"><div class="adb">${img?`<img src="${esc(S.ad)}">`:`<iframe src="${esc(S.ad)}"></iframe>`}</div><div class="adf"><a href="${esc(S.ad)}" target="_blank" rel="noopener">নতুন ট্যাবে দেখুন ↗</a><span>বিজ্ঞাপন · <b id="ac">${D(5)}</b> সেকেন্ড</span></div></div>`);
+ let c=5;const t=setInterval(()=>{c--;const e=$('ac');if(e)e.textContent=D(c);if(c<=0){clearInterval(t);pg='app';render()}},1000)}
+let nKnown=null,nStart=0;
+const rd=k=>{try{return JSON.parse(localStorage.getItem(k)||'[]')}catch(e){return[]}},wr=(k,a)=>{try{localStorage.setItem(k,JSON.stringify(a))}catch(e){}};
+function myN(){const base=[...S.nAll,...S.nMe],ls=S.loans.filter(l=>l.mid==me.id),nx=ls.flatMap(l=>sched(l).filter(s=>!s.paid)).sort((a,b)=>a.m.localeCompare(b.m))[0],cur=today().slice(0,7);
+ if(nx&&nx.m<=addM(cur,1))base.push({id:'auto-'+nx.m,auto:1,title:nx.m<cur?'⚠ বকেয়া কিস্তি':'📅 কিস্তির অনুস্মারক',text:fm(nx.m)+' মাসের কিস্তি '+tk(nx.a)+' (কিস্তি নং '+D(String(nx.no).padStart(2,'0'))+')',ts:nx.m+'-01T00:00:00.000Z'});
+ const od=ls.flatMap(l=>overd(l).map(s=>({l,s})));
+ if(od.length)base.push({id:'od-'+today(),auto:1,popup:1,title:'⚠ ঋণের কিস্তি বকেয়া',text:'আপনার '+D(od.length)+' টি কিস্তির শেষ তারিখ পেরিয়ে গেছে:\n'+od.map(x=>'• '+fm(x.s.m)+' — '+tk(x.s.a)+' (শেষ তারিখ '+fd(dueDate(x.l,x.s.m))+')').join('\n')+'\n\nমোট বকেয়া: '+tk(od.reduce((t,x)=>t+x.s.a,0))+'\nঅনুগ্রহ করে দ্রুত পরিশোধ করুন।',ts:new Date().toISOString()});
+ return base.sort((a,b)=>b.ts.localeCompare(a.ts))}
+const unread=()=>{if(!me)return 0;const s=rd('seen_'+me.id);return myN().filter(n=>!s.includes(n.id)).length};
+function popup(){if(!me)return'';const d=rd('pop_'+me.id),n=myN().find(x=>x.popup&&!d.includes(x.id));if(!n)return'';
+ return`<div class="pop"><div class="pb"><div style="font-size:42px">📣</div><h2>${esc(n.title)}</h2><p>${esc(n.text)}</p><button class="btn" onclick="popOk('${n.id}')">ঠিক আছে</button></div></div>`}
+function popOk(id){wr('pop_'+me.id,[...rd('pop_'+me.id),id]);wr('seen_'+me.id,[...rd('seen_'+me.id),id]);render()}
+function notifTab(){const L=myN(),s=rd('seen_'+me.id);
+ const h=('Notification' in window&&Notification.permission==='default'?`<div class="card"><b>📲 ফোনে নোটিফিকেশন</b><p class="mu">চালু করলে অ্যাপ খোলা থাকাকালীন নতুন বার্তা ফোনের নোটিফিকেশন হিসেবে আসবে।</p><button class="btn" onclick="askN()">চালু করুন</button></div>`:'')+(L.map(n=>`<div class="card nt ${s.includes(n.id)?'':'un'}"><b>${esc(n.title)}</b><p>${esc(n.text)}</p><small class="mu">${fd(n.ts.slice(0,10))}</small></div>`).join('')||'<div class="card mu">কোনো নোটিফিকেশন নেই</div>');
+ wr('seen_'+me.id,[...new Set([...s,...L.map(n=>n.id)])]);return h}
+function askN(){try{Notification.requestPermission().then(()=>render())}catch(e){}}
+function osNote(n){try{if(!('Notification' in window)||Notification.permission!=='granted')return;const o={body:n.text,icon:'icon-192.png'};navigator.serviceWorker&&navigator.serviceWorker.getRegistration().then(r=>r?r.showNotification(n.title,o):new Notification(n.title,o)).catch(()=>{})}catch(e){}}
+function onNotice(){if(!nKnown)return;[...S.nAll,...S.nMe].forEach(n=>{if(!nKnown.has(n.id)){nKnown.add(n.id);if(Date.now()-nStart>3500)osNote(n)}})}
+listenSettings();render();
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script></body></html>
